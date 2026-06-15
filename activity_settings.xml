@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A"
+    android:padding="32dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/settings_title" android:textSize="28sp" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:layout_marginBottom="24dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Background color (#AARRGGBB)" android:textColor="#CCCCCC"/>
+        <EditText android:id="@+id/bgColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#FFFFFF"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Surface color" android:textColor="#CCCCCC"/>
+        <EditText android:id="@+id/surfaceColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#FFFFFF"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Text color" android:textColor="#CCCCCC"/>
+        <EditText android:id="@+id/textColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#FFFFFF"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Accent color" android:textColor="#CCCCCC"/>
+        <EditText android:id="@+id/accentColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#FFFFFF"/>
+
+        <CheckBox android:id="@+id/freeForm" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Free-form layout (drag icons anywhere)" android:textColor="#FFFFFF" android:layout_marginTop="16dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Grid columns" android:textColor="#CCCCCC" android:layout_marginTop="16dp"/>
+        <SeekBar android:id="@+id/columns" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="12"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Icon size (dp)" android:textColor="#CCCCCC"/>
+        <SeekBar android:id="@+id/iconSize" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="180"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Language" android:textColor="#CCCCCC" android:layout_marginTop="16dp"/>
+        <Spinner android:id="@+id/language" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/profiles" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Manage profiles" android:layout_marginTop="24dp"/>
+        <Button android:id="@+id/save" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Save" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Grid OS</string>
+    <string name="settings_title">Customize</string>
+    <string name="menu_open">Open</string>
+    <string name="menu_info">App info</string>
+    <string name="menu_hide">Hide from launcher</string>
+    <string name="menu_uninstall">Uninstall</string>
+</resources>
